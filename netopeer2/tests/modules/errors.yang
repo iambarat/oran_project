@@ -1,0 +1,90 @@
+module errors {
+    namespace "urn:errors";
+    prefix e;
+
+    container cont {
+        list l {
+            key "k";
+            unique "u";
+            leaf k {
+                type string;
+            }
+            leaf u {
+                type string;
+            }
+        }
+
+        list l2 {
+            max-elements 2;
+            key "k";
+            leaf k {
+                type string;
+            }
+        }
+    }
+
+    container cont2 {
+        presence "presence";
+        leaf-list l3 {
+            type string;
+            min-elements 2;
+        }
+    }
+
+    leaf l4 {
+        must "/cont/l/k = 'key'";
+        type string;
+    }
+
+    leaf target {
+        type string;
+    }
+
+    leaf l5 {
+        type leafref {
+            path "../target";
+        }
+    }
+
+    leaf l6 {
+        type instance-identifier;
+    }
+
+    container cont3 {
+        presence "presence";
+        choice ch {
+            mandatory true;
+            leaf l7 {
+                type string;
+            }
+            leaf l8 {
+                type string;
+            }
+        }
+    }
+
+    list l9 {
+        ordered-by user;
+        key "k";
+        leaf k {
+            type string;
+        }
+    }
+
+    leaf-list l10 {
+        ordered-by user;
+        type string;
+    }
+
+    leaf str {
+        type string {
+            pattern 'a*';
+        }
+    }
+
+    leaf num {
+        type uint16 {
+            range "10..100";
+        }
+    }
+}

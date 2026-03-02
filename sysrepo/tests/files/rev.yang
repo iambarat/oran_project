@@ -1,0 +1,20 @@
+module rev {
+    namespace "urn:rev";
+    prefix r;
+
+    leaf l {
+        type empty;
+    }
+
+    container cont {
+        leaf d1 {
+            type string;
+            default "def";
+        }
+
+        leaf d2 {
+            type string;
+            default "def2";
+        }
+    }
+}

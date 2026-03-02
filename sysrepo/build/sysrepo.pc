@@ -1,0 +1,17 @@
+prefix=/usr
+includedir=${prefix}/include
+libdir=${prefix}/lib/x86_64-linux-gnu
+
+Name: sysrepo
+Description: YANG-based system repository for all-around configuration management.
+Version: 3.6.11
+Requires.private: libyang
+Libs: -L${libdir} -lsysrepo
+Cflags: -I${includedir}
+
+SR_REPO_PATH=/home/bota/Drive/oran_project/sysrepo/build/repository
+SR_PLUGINS_PATH=/usr/lib/x86_64-linux-gnu/sysrepo/plugins
+SRPD_PLUGINS_PATH=/usr/lib/x86_64-linux-gnu/sysrepo-plugind/plugins
+
+SR_GROUP=
+SR_UMASK=000

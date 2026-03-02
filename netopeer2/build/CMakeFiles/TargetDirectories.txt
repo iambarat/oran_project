@@ -1,0 +1,17 @@
+/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/serverobj.dir
+/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/netopeer2-server.dir
+/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/cleancache.dir
+/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/uninstall.dir
+/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/edit_cache.dir
+/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/rebuild_cache.dir
+/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/list_install_components.dir
+/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/install.dir
+/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/install/local.dir
+/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/install/strip.dir
+/home/bota/Drive/oran_project/netopeer2/build/cli/CMakeFiles/netopeer2-cli.dir
+/home/bota/Drive/oran_project/netopeer2/build/cli/CMakeFiles/edit_cache.dir
+/home/bota/Drive/oran_project/netopeer2/build/cli/CMakeFiles/rebuild_cache.dir
+/home/bota/Drive/oran_project/netopeer2/build/cli/CMakeFiles/list_install_components.dir
+/home/bota/Drive/oran_project/netopeer2/build/cli/CMakeFiles/install.dir
+/home/bota/Drive/oran_project/netopeer2/build/cli/CMakeFiles/install/local.dir
+/home/bota/Drive/oran_project/netopeer2/build/cli/CMakeFiles/install/strip.dir

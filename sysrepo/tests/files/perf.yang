@@ -1,0 +1,36 @@
+module perf {
+    yang-version 1.1;
+    namespace "urn:sysrepo:tests:perf";
+    prefix p;
+
+    container cont {
+        presence cont;
+        list lst {
+            key "k1 k2";
+
+            leaf k1 {
+                type uint32;
+            }
+
+            leaf k2 {
+                type string;
+            }
+
+            leaf l {
+                type string;
+            }
+        }
+        list usr-lst {
+            key k;
+            ordered-by user;
+
+            leaf k {
+                type uint32;
+            }
+
+            leaf l {
+                type string;
+            }
+        }
+    }
+}

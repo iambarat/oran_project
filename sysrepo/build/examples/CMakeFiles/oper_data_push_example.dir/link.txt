@@ -1,0 +1,1 @@
+/usr/bin/cc -g -O0  -Wall -Wextra -Wpedantic -std=c11 -g CMakeFiles/oper_data_push_example.dir/oper_data_push_example.c.o -o oper_data_push_example  -Wl,-rpath,/home/bota/Drive/oran_project/sysrepo/build:/usr/local/lib ../libsysrepo.so.7.33.5 -latomic /usr/lib/x86_64-linux-gnu/librt.a -ldl /usr/local/lib/libyang.so 

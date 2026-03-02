@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -O0  -Wall -Wextra -Wpedantic -std=c11 -g -shared  -o oven.so CMakeFiles/oven.dir/plugin/oven.c.o  -Wl,-rpath,/home/bota/Drive/oran_project/sysrepo/build:/usr/local/lib ../libsysrepo.so.7.33.5 -latomic /usr/lib/x86_64-linux-gnu/librt.a -ldl /usr/local/lib/libyang.so 

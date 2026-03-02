@@ -1,0 +1,40 @@
+{
+    "config": {
+        "log-period": 60,
+        "repetition-period": 180,
+
+        "points": [
+            "DRB.MeanActiveUeDl",
+            "DRB.MeanActiveUeUl",
+            "DRB.UEThpDl",
+            "DRB.UEThpUl"
+        ]
+    },
+
+    "values": [
+        {
+            "DRB.MeanActiveUeDl": 22,
+            "DRB.MeanActiveUeUl": 3,
+            "DRB.UEThpDl": 17,
+            "DRB.UEThpUl": 5
+        },
+        {
+            "DRB.MeanActiveUeDl": 27,
+            "DRB.MeanActiveUeUl": 4,
+            "DRB.UEThpDl": 19,
+            "DRB.UEThpUl": 7
+        },
+        {
+            "DRB.MeanActiveUeDl": 30,
+            "DRB.MeanActiveUeUl": 9,
+            "DRB.UEThpDl": 19,
+            "DRB.UEThpUl": 3
+        },
+        {
+          "DRB.MeanActiveUeDl": 5,
+          "DRB.MeanActiveUeUl": 4,
+          "DRB.UEThpDl": 3,
+          "DRB.UEThpUl": 3
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+# Hardening
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/default.mk
+
+# needed for CMake that ignores CPPFLAGS
+CFLAGS+=$(CPPFLAGS)
+CXXFLAGS+=$(CPPFLAGS)
+
+# be strict when comparing symbols in netopeer2-1
+export DPKG_GENSYMBOLS_CHECK_LEVEL=4
+
+%:
+	dh $@ --buildsystem=cmake --builddir=build
+
+override_dh_auto_configure:
+	dh_auto_configure --builddir=build -- -DCMAKE_BUILD_TYPE="Release" -DENABLE_TESTS=OFF -DBUILD_CLI=ON -DSYSREPO_SETUP=OFF -DPIDFILE_PREFIX=/run -DSERVER_DIR=/var/lib/netopeer2
+
+override_dh_auto_install:
+	dh_auto_install --builddir=build --destdir=$(CURDIR)/debian/tmp
+
+override_dh_missing:
+	dh_missing --fail-missing
+

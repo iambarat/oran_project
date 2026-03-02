@@ -1,0 +1,1017 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.11.0-26-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-1Td42K"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-1Td42K"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-1Td42K'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_22aed/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_22aed.dir/build.make CMakeFiles/cmTC_22aed.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-1Td42K'
+        Building C object CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aed.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_22aed.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccxiVI7h.s
+        GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 38987c28e967c64056a6454abdef726e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aed.dir/'
+         as -v --64 -o CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o /tmp/ccxiVI7h.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_22aed
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22aed.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o -o cmTC_22aed 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_22aed' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_22aed.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccl7dqu2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_22aed /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_22aed' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_22aed.'
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-1Td42K'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-1Td42K']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_22aed/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_22aed.dir/build.make CMakeFiles/cmTC_22aed.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-1Td42K']
+        ignore line: [Building C object CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aed.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_22aed.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccxiVI7h.s]
+        ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aed.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o /tmp/ccxiVI7h.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_22aed]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22aed.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o -o cmTC_22aed ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_22aed' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_22aed.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccl7dqu2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_22aed /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccl7dqu2.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_22aed] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_22aed.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/FindLibNETCONF2.cmake:95 (check_symbol_exists)"
+      - "CMakeLists.txt:231 (find_package)"
+    checks:
+      - "Looking for NC_ENABLED_SSH_TLS"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-WKO6nu"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-WKO6nu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "LIBNETCONF2_ENABLED_SSH_TLS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-WKO6nu'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9e8c9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9e8c9.dir/build.make CMakeFiles/cmTC_9e8c9.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-WKO6nu'
+        Building C object CMakeFiles/cmTC_9e8c9.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_9e8c9.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-WKO6nu/CheckSymbolExists.c
+        Linking C executable cmTC_9e8c9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e8c9.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_9e8c9.dir/CheckSymbolExists.c.o -o cmTC_9e8c9  /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libssh.so 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-WKO6nu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:31 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for _POSIX_TIMERS"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-jzJFvR"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-jzJFvR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_CLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-jzJFvR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e35dc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e35dc.dir/build.make CMakeFiles/cmTC_e35dc.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-jzJFvR'
+        Building C object CMakeFiles/cmTC_e35dc.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_e35dc.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-jzJFvR/CheckSymbolExists.c
+        Linking C executable cmTC_e35dc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e35dc.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_e35dc.dir/CheckSymbolExists.c.o -o cmTC_e35dc  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-jzJFvR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:36 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for pthread_mutex_timedlock"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LXhk0o"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LXhk0o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_TIMEDLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LXhk0o'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3c687/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3c687.dir/build.make CMakeFiles/cmTC_3c687.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LXhk0o'
+        Building C object CMakeFiles/cmTC_3c687.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_3c687.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LXhk0o/CheckSymbolExists.c
+        Linking C executable cmTC_3c687
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c687.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_3c687.dir/CheckSymbolExists.c.o -o cmTC_3c687  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LXhk0o'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:37 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for pthread_mutex_clocklock"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-5tAF1r"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-5tAF1r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_CLOCKLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-5tAF1r'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c5100/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c5100.dir/build.make CMakeFiles/cmTC_c5100.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-5tAF1r'
+        Building C object CMakeFiles/cmTC_c5100.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_c5100.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-5tAF1r/CheckSymbolExists.c
+        Linking C executable cmTC_c5100
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5100.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_c5100.dir/CheckSymbolExists.c.o -o cmTC_c5100  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-5tAF1r'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:38 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for pthread_rwlock_clockrdlock"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-iIKfJL"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-iIKfJL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_PTHREAD_RWLOCK_CLOCKRDLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-iIKfJL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a3d09/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a3d09.dir/build.make CMakeFiles/cmTC_a3d09.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-iIKfJL'
+        Building C object CMakeFiles/cmTC_a3d09.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_a3d09.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-iIKfJL/CheckSymbolExists.c
+        Linking C executable cmTC_a3d09
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3d09.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_a3d09.dir/CheckSymbolExists.c.o -o cmTC_a3d09  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-iIKfJL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:39 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for pthread_rwlock_clockwrlock"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-tOFZAh"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-tOFZAh"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_PTHREAD_RWLOCK_CLOCKWRLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-tOFZAh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_411ae/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_411ae.dir/build.make CMakeFiles/cmTC_411ae.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-tOFZAh'
+        Building C object CMakeFiles/cmTC_411ae.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_411ae.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-tOFZAh/CheckSymbolExists.c
+        Linking C executable cmTC_411ae
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_411ae.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_411ae.dir/CheckSymbolExists.c.o -o cmTC_411ae  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-tOFZAh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:40 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for pthread_cond_clockwait"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-EWTPzR"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-EWTPzR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_PTHREAD_COND_CLOCKWAIT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-EWTPzR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0cf3c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0cf3c.dir/build.make CMakeFiles/cmTC_0cf3c.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-EWTPzR'
+        Building C object CMakeFiles/cmTC_0cf3c.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_0cf3c.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-EWTPzR/CheckSymbolExists.c
+        Linking C executable cmTC_0cf3c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cf3c.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_0cf3c.dir/CheckSymbolExists.c.o -o cmTC_0cf3c  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-EWTPzR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:43 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for _POSIX_MONOTONIC_CLOCK"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-X8GZ2D"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-X8GZ2D"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_CLOCK_MONOTONIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-X8GZ2D'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed20b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ed20b.dir/build.make CMakeFiles/cmTC_ed20b.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-X8GZ2D'
+        Building C object CMakeFiles/cmTC_ed20b.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_ed20b.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-X8GZ2D/CheckSymbolExists.c
+        Linking C executable cmTC_ed20b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed20b.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_ed20b.dir/CheckSymbolExists.c.o -o cmTC_ed20b  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-X8GZ2D'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:51 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for vdprintf"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-0gHTeO"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-0gHTeO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_VDPRINTF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-0gHTeO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bfd5a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bfd5a.dir/build.make CMakeFiles/cmTC_bfd5a.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-0gHTeO'
+        Building C object CMakeFiles/cmTC_bfd5a.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_bfd5a.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-0gHTeO/CheckSymbolExists.c
+        Linking C executable cmTC_bfd5a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfd5a.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_bfd5a.dir/CheckSymbolExists.c.o -o cmTC_bfd5a  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-0gHTeO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:52 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for asprintf"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-ybaK6T"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-ybaK6T"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_ASPRINTF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-ybaK6T'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b7db6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b7db6.dir/build.make CMakeFiles/cmTC_b7db6.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-ybaK6T'
+        Building C object CMakeFiles/cmTC_b7db6.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_b7db6.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-ybaK6T/CheckSymbolExists.c
+        Linking C executable cmTC_b7db6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7db6.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_b7db6.dir/CheckSymbolExists.c.o -o cmTC_b7db6  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-ybaK6T'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:53 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for vasprintf"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qm1sO3"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qm1sO3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_VASPRINTF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qm1sO3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b4eee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b4eee.dir/build.make CMakeFiles/cmTC_b4eee.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qm1sO3'
+        Building C object CMakeFiles/cmTC_b4eee.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_b4eee.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qm1sO3/CheckSymbolExists.c
+        Linking C executable cmTC_b4eee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4eee.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_b4eee.dir/CheckSymbolExists.c.o -o cmTC_b4eee  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qm1sO3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:54 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for getline"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dGBKmj"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dGBKmj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_GETLINE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dGBKmj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1d758/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1d758.dir/build.make CMakeFiles/cmTC_1d758.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dGBKmj'
+        Building C object CMakeFiles/cmTC_1d758.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_1d758.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dGBKmj/CheckSymbolExists.c
+        Linking C executable cmTC_1d758
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d758.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_1d758.dir/CheckSymbolExists.c.o -o cmTC_1d758  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dGBKmj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:56 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for strndup"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-XC3QtX"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-XC3QtX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_STRNDUP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-XC3QtX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dc6cb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dc6cb.dir/build.make CMakeFiles/cmTC_dc6cb.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-XC3QtX'
+        Building C object CMakeFiles/cmTC_dc6cb.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_dc6cb.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-XC3QtX/CheckSymbolExists.c
+        Linking C executable cmTC_dc6cb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc6cb.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_dc6cb.dir/CheckSymbolExists.c.o -o cmTC_dc6cb  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-XC3QtX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:57 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for strnstr"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qfzRHD"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qfzRHD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_STRNSTR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qfzRHD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d4017/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d4017.dir/build.make CMakeFiles/cmTC_d4017.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qfzRHD'
+        Building C object CMakeFiles/cmTC_d4017.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_d4017.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qfzRHD/CheckSymbolExists.c
+        /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qfzRHD/CheckSymbolExists.c: In function ‘main’:
+        /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qfzRHD/CheckSymbolExists.c:8:19: error: ‘strnstr’ undeclared (first use in this function); did you mean ‘strstr’?
+            8 |   return ((int*)(&strnstr))[argc];
+              |                   ^~~~~~~
+              |                   strstr
+        /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qfzRHD/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qfzRHD/CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+            4 | int main(int argc, char** argv)
+              |          ~~~~^~~~
+        gmake[1]: *** [CMakeFiles/cmTC_d4017.dir/build.make:78: CMakeFiles/cmTC_d4017.dir/CheckSymbolExists.c.o] Error 1
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-qfzRHD'
+        gmake: *** [Makefile:127: cmTC_d4017/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:58 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for strdupa"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-xYKYW9"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-xYKYW9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_STRDUPA"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-xYKYW9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_53aaa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_53aaa.dir/build.make CMakeFiles/cmTC_53aaa.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-xYKYW9'
+        Building C object CMakeFiles/cmTC_53aaa.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_53aaa.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-xYKYW9/CheckSymbolExists.c
+        Linking C executable cmTC_53aaa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53aaa.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_53aaa.dir/CheckSymbolExists.c.o -o cmTC_53aaa  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-xYKYW9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:59 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for strchrnul"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-IlcQbB"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-IlcQbB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_STRCHRNUL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-IlcQbB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bd55b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bd55b.dir/build.make CMakeFiles/cmTC_bd55b.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-IlcQbB'
+        Building C object CMakeFiles/cmTC_bd55b.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_bd55b.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-IlcQbB/CheckSymbolExists.c
+        Linking C executable cmTC_bd55b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd55b.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_bd55b.dir/CheckSymbolExists.c.o -o cmTC_bd55b  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-IlcQbB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeModules/UseCompat.cmake:61 (check_symbol_exists)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for get_current_dir_name"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dLGchp"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dLGchp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_GET_CURRENT_DIR_NAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dLGchp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2e06a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2e06a.dir/build.make CMakeFiles/cmTC_2e06a.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dLGchp'
+        Building C object CMakeFiles/cmTC_2e06a.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_2e06a.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dLGchp/CheckSymbolExists.c
+        Linking C executable cmTC_2e06a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e06a.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_2e06a.dir/CheckSymbolExists.c.o -o cmTC_2e06a  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-dLGchp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "CMakeModules/UseCompat.cmake:65 (check_include_file)"
+      - "CMakeLists.txt:237 (use_compat)"
+    checks:
+      - "Looking for stdatomic.h"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-TPRfbB"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-TPRfbB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-TPRfbB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6f7c5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6f7c5.dir/build.make CMakeFiles/cmTC_6f7c5.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-TPRfbB'
+        Building C object CMakeFiles/cmTC_6f7c5.dir/CheckIncludeFile.c.o
+        /usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L -D__BSD_VISIBLE=1  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_6f7c5.dir/CheckIncludeFile.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-TPRfbB/CheckIncludeFile.c
+        Linking C executable cmTC_6f7c5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f7c5.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_6f7c5.dir/CheckIncludeFile.c.o -o cmTC_6f7c5  -lpthread 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-TPRfbB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:252 (check_symbol_exists)"
+    checks:
+      - "Looking for sigaction"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LGMMso"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LGMMso"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_SIGACTION"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LGMMso'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed0d6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ed0d6.dir/build.make CMakeFiles/cmTC_ed0d6.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LGMMso'
+        Building C object CMakeFiles/cmTC_ed0d6.dir/CheckSymbolExists.c.o
+        /usr/bin/cc -D_POSIX_C_SOURCE=199309L  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_ed0d6.dir/CheckSymbolExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LGMMso/CheckSymbolExists.c
+        Linking C executable cmTC_ed0d6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed0d6.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_ed0d6.dir/CheckSymbolExists.c.o -o cmTC_ed0d6 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-LGMMso'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:310 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-VCZGe4"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-VCZGe4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-VCZGe4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b3a1d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b3a1d.dir/build.make CMakeFiles/cmTC_b3a1d.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-VCZGe4'
+        Building C object CMakeFiles/cmTC_b3a1d.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -g -O0  -Wall -Wextra -std=c99  -o CMakeFiles/cmTC_b3a1d.dir/src.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-VCZGe4/src.c
+        Linking C executable cmTC_b3a1d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3a1d.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99  CMakeFiles/cmTC_b3a1d.dir/src.c.o -o cmTC_b3a1d 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-VCZGe4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "cli/CMakeLists.txt:53 (check_function_exists)"
+    checks:
+      - "Looking for eaccess"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-pXC8o0"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-pXC8o0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_EACCESS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-pXC8o0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1d781/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1d781.dir/build.make CMakeFiles/cmTC_1d781.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-pXC8o0'
+        Building C object CMakeFiles/cmTC_1d781.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -g -O0  -Wall -Wextra -std=c99 -DCHECK_FUNCTION_EXISTS=eaccess -o CMakeFiles/cmTC_1d781.dir/CheckFunctionExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-pXC8o0/CheckFunctionExists.c
+        Linking C executable cmTC_1d781
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d781.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99 -DCHECK_FUNCTION_EXISTS=eaccess CMakeFiles/cmTC_1d781.dir/CheckFunctionExists.c.o -o cmTC_1d781  -Wl,-rpath,/usr/local/lib /usr/local/lib/libyang.so /usr/local/lib/libsysrepo.so 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-pXC8o0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "cli/CMakeLists.txt:54 (check_function_exists)"
+    checks:
+      - "Looking for mkstemps"
+    directories:
+      source: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-6lVSD7"
+      binary: "/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-6lVSD7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-g -O0  -Wall -Wextra -std=c99"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/bota/Drive/oran_project/netopeer2/CMakeModules/"
+    buildResult:
+      variable: "HAVE_MKSTEMPS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-6lVSD7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aef9b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aef9b.dir/build.make CMakeFiles/cmTC_aef9b.dir/build
+        gmake[1]: Entering directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-6lVSD7'
+        Building C object CMakeFiles/cmTC_aef9b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -g -O0  -Wall -Wextra -std=c99 -DCHECK_FUNCTION_EXISTS=mkstemps -o CMakeFiles/cmTC_aef9b.dir/CheckFunctionExists.c.o -c /home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-6lVSD7/CheckFunctionExists.c
+        Linking C executable cmTC_aef9b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aef9b.dir/link.txt --verbose=1
+        /usr/bin/cc -g -O0  -Wall -Wextra -std=c99 -DCHECK_FUNCTION_EXISTS=mkstemps CMakeFiles/cmTC_aef9b.dir/CheckFunctionExists.c.o -o cmTC_aef9b  -Wl,-rpath,/usr/local/lib /usr/local/lib/libyang.so /usr/local/lib/libsysrepo.so 
+        gmake[1]: Leaving directory '/home/bota/Drive/oran_project/netopeer2/build/CMakeFiles/CMakeScratch/TryCompile-6lVSD7'
+        
+      exitCode: 0
+...
